@@ -1,0 +1,17 @@
+from Modelos.Libro import Libro
+from Modelos.Prestamo import Prestamo 
+class GestorPrestamos:
+    
+    def __init__(self):
+        self.prestamos = []
+    
+    def realizar_prestamo(self,libro,usuario,Fecha):
+        if libro.prestar():
+            prestamo = Prestamo(libro,usuario,Fecha)
+            self.prestamos.append(prestamo)
+            return "Prestamo realizado correctamente" 
+        return "El libro no esta disponible"
+    
+    def listar_prestamos(self):
+        for prestamo in self.prestamos:
+            print(prestamo)
