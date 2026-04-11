@@ -1,7 +1,7 @@
-from Modelos.Libro import Libro
-from Modelos.Prestamo import Prestamo 
+from modelos.libro import Libro
+from modelos.prestamo import Prestamo 
+
 class GestorPrestamos:
-    
     def __init__(self):
         self.prestamos = []
     

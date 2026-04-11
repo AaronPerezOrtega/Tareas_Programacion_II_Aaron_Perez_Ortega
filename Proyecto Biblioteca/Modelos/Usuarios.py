@@ -1,7 +1,9 @@
+from modelos.persona import persona
+
 class Usuarios:
-    def __init__(self,Nombre,Identificador):
-        self.__Nombre = Nombre
-        self.__Identificador = Identificador
+    def __init__(self,Nombre,Identificador,tipo_usuario):
+        super().__init__(nombre,identificador)
+        self.__tipo_usuario
 
     def getNombre(self):
         return self.__Nombre
