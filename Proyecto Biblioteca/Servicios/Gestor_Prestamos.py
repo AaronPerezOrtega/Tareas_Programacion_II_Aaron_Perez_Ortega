@@ -5,9 +5,9 @@ class GestorPrestamos:
     def __init__(self):
         self.prestamos = []
     
-    def realizar_prestamo(self,libro,usuario,Fecha):
+    def realizar_prestamo(self,libro,usuario,fecha):
         if libro.prestar():
-            prestamo = Prestamo(libro,usuario,Fecha)
+            prestamo = Prestamo(libro,usuario,fecha)
             self.prestamos.append(prestamo)
             return "Prestamo realizado correctamente" 
         return "El libro no esta disponible"

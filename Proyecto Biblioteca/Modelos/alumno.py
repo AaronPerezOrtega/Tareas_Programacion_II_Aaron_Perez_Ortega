@@ -6,3 +6,6 @@ class Alumno(Usuario):
         
     def pedirLibro(self):
          print("El alumno solicita un libro")
+
+    def descripcion(self):
+        return f"Alumno: {self.getNombre()}"

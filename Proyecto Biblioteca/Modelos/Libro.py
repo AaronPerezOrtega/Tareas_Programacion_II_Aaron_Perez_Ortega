@@ -5,7 +5,7 @@ class Libro:
         self.__ISBN = ISBN
         self.__Disponibilidad = True 
     
-    def getTitle(self):
+    def getTitulo(self):
         return self.__Titulo
     
     def getAutor(self):

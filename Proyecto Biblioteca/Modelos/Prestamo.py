@@ -1,8 +1,8 @@
 class Prestamo:
-    def __init__(self,Libro,Usuario,FechaPrestamo):
-        self.__Usuario = Usuario
-        self.__Libro = Libro
-        self.__FechaPrestamo = FechaPrestamo
+    def __init__(self,libro,usuario,fechaprestamo):
+        self.__Libro = libro
+        self.__Usuario = usuario
+        self.__FechaPrestamo = fechaprestamo
 
     def getUsuario(self):
         return self.__Usuario
