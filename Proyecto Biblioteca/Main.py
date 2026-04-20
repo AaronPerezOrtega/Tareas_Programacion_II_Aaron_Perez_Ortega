@@ -12,7 +12,7 @@ biblioteca1 = Biblioteca("Biblioteca Central")
 bibliotecario1 = Bibliotecario("Carlos","B001","IA")
 
 #crear libro
-libro1 = Libro("Peppa Pig","Bucanero","12345")
+libro1 = Libro("Tomie I","Junji Ito","12345")
 libro2 = Libro("Teoria de Evolucion del Ser Humano","Jorge el Curioso","12345")
 
 #Bibliotecario registra libros
