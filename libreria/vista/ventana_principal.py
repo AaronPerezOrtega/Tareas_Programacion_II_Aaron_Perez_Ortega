@@ -35,8 +35,17 @@ class Ventana_Principal:
         self.boton_agregar_libros.grid(row=0, column=0, padx=5)
 
         self.boton_listar_libros = tk.Button(frame_botones, text="Mostrar libros")
-        self.boton_listar_libros.grid(row=0, column=1, padx=5)
-
+        self.boton_listar_libros.grid(row=0, column=2, padx=5)
+        
+        self.boton_eliminar_primer_libro = tk.Button(frame_botones, text="Eliminar primer libro")
+        self.boton_eliminar_primer_libro.grid(row=1, column=0, padx=5)
+        
+        self.boton_eliminar_por_titulo = tk.Button(frame_botones, text="Eliminar por titulo")
+        self.boton_eliminar_por_titulo.grid(row=1, column=1, padx=5)
+        
+        self.boton_eliminar_ultimo_libro = tk.Button(frame_botones, text="Eliminar ultimo libro")
+        self.boton_eliminar_ultimo_libro.grid(row=1, column=2, padx=5)
+        
         #Lista
         self.lista_libros = tk.Listbox(root, width=50)
         self.lista_libros.pack()
