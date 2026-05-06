@@ -52,6 +52,7 @@ class Biblioteca_Controller:
             self.mostrar_libros()
             messagebox.showinfo("Exito","Se elimino el ultimo libro exitosamente")
         else:
+            messagebox.showwarning("Error","No hay libros guardados D:")
         
         
 
